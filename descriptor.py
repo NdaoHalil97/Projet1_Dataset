@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from skimage.feature import graycomatrix, graycoprops
-from BiT import bio_taxo
+# from BiT import bio_taxo  # Commentez cette ligne car le module n'est pas trouvé
 
 def glcm(image):
     if isinstance(image, str):
@@ -34,4 +34,7 @@ def bitdesc(image):
     else:
         raise ValueError("Input should be a file path or a numpy array")
 
-    return bio_taxo(image)
+    # Remplacez bio_taxo par une fonction alternative
+    # return bio_taxo(image)  # Commentez cette ligne car le module n'est pas trouvé
+    # Exemple d'une fonction alternative simple :
+    return np.histogram(image, bins=256)[0]  # Histogramme simple comme descripteur

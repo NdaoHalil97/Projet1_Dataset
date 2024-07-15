@@ -45,4 +45,4 @@ if __name__ == '__main__':
     if descriptor_choice not in ['glcm', 'bit']:
         print("Invalid descriptor choice. Defaulting to 'glcm'.")
         descriptor_choice = 'glcm'
-    process_datasets('../Cbir_datasets/', descriptor=descriptor_choice)
+    process_datasets('C:/Users/ndaoi/Desktop/IA_2/Projet1_Dataset/Cbir_datasets/', descriptor=descriptor_choice)
