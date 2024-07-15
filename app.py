@@ -125,3 +125,7 @@ if uploaded_file is not None:
                             st.error(f"Erreur lors du chargement de l'image {img_path}")
             else:
                 st.error("Aucune image similaire trouvée.")
+
+
+
+
